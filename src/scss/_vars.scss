@@ -1,0 +1,17 @@
+:root {
+  // base
+  --font-family: "Open Sans", sans-serif;
+  --content-width: 1167px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --color-light: #fff;
+  --color-black: #000;
+  --color-accent: #d9e3ef;
+  --color-silver: #c4c4c4;
+  --color-boulder: #757575;
+  --color-seagull: #7cbcec;
+  --color-abbey: #48494d;
+  --color-shaft: #373737;
+}
