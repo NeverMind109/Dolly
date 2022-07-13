@@ -149,11 +149,10 @@ a {
   background-color: var(--color-light);
   border: 1px solid var(--color-shaft);
   padding: 22px 55px;
-  transition: color 0.3s, background-color 0.3s, border 0.3s;
+  transition: color 0.3s, background-color 0.3s;
   &:hover {
     background-color: var(--color-shaft);
     color: var(--color-light);
-    border: 1px solid var(--color-light);
   }
   &--dark {
     background-color: var(--color-shaft);
@@ -162,5 +161,38 @@ a {
       color: var(--color-shaft);
       background-color: var(--color-light);
     }
+  }
+}
+
+.logo {
+  margin-right: 64px;
+
+  @include tablet {
+    margin-right: 0;
+  }
+}
+
+.burger {
+  display: none;
+  @include burger;
+
+  &::after {
+    width: 25%;
+    left: 75%;
+  }
+  &__line {
+    width: 75%;
+    left: 25%;
+  }
+  &--active {
+    &::after {
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  @include tablet {
+    display: flex;
+    z-index: 30;
   }
 }

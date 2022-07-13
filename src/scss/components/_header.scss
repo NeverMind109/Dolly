@@ -1,0 +1,25 @@
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 50px 0 10px;
+  &__wrapper {
+    @include flex-v-center;
+  }
+  &__btns-list {
+    @include flex-v-center;
+
+    margin-left: auto;
+
+    @include tablet {
+      margin: 0 auto;
+    }
+  }
+  &__btns-item {
+    &:not(:last-child) {
+      margin-right: 19px;
+    }
+  }
+}

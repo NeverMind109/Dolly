@@ -1,0 +1,52 @@
+.hero {
+  position: relative;
+  &__decorate {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 9;
+    width: 100%;
+  }
+  &__background {
+    position: absolute;
+    left: 48%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 8;
+    width: 52%;
+    background-color: var(--color-accent);
+  }
+  &__wrapper {
+    display: flex;
+    padding-top: 60px;
+  }
+  &__info {
+    position: absolute;
+    z-index: 11;
+    max-width: 530px;
+    padding-top: 280px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 82px;
+    color: var(--color-shaft);
+    margin-bottom: 60px;
+  }
+  &__btn {
+    margin-bottom: 153px;
+  }
+  &__arrow {
+    display: block;
+  }
+  &__image {
+    position: relative;
+    z-index: 10;
+    font-size: 0;
+    margin-left: auto;
+  }
+  &__img {
+    object-fit: none;
+  }
+}
