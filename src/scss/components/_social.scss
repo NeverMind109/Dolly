@@ -1,0 +1,9 @@
+.social {
+  @include flex-v-center;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}

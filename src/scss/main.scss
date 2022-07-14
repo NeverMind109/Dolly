@@ -6,7 +6,7 @@
 
 // подключения компонентов страницы
 @import "./components/nav";
-
+@import "./components/social";
 // подключения секций страницы
 @import "./components/header";
 @import "./components/hero";
@@ -15,3 +15,5 @@
 @import "./components/casual-section";
 @import "./components/strict-section";
 @import "./components/popular-goods";
+
+@import "./components/footer";
