@@ -1,0 +1,110 @@
+.casual-section {
+  &__wrapper {
+    position: relative;
+    display: flex;
+  }
+  &__info {
+    position: relative;
+    max-width: 350px;
+    margin-left: 310px;
+    margin-right: 123px;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__content {
+    position: relative;
+    max-width: 380px;
+    margin-top: -75px;
+  }
+  &__decorate {
+    position: absolute;
+    left: -3%;
+    top: 70%;
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 392px;
+    text-align: right;
+    color: var(--color-concrete);
+  }
+  &__line {
+    position: absolute;
+    left: 232px;
+    top: -42%;
+    z-index: 5;
+    height: 513px;
+    width: 1px;
+    background-color: var(--color-black);
+  }
+  &__main-image {
+    overflow: hidden;
+  }
+  &__small-images {
+    overflow: hidden;
+    max-width: 370px;
+    position: absolute;
+    top: 66%;
+    left: -95%;
+  }
+  &__pagination {
+    padding-top: 16px;
+  }
+  &__link {
+    display: block;
+    padding-top: 70px;
+  }
+  &__link-wrapper {
+    position: relative;
+    width: 376px;
+    height: 562px;
+    background-color: var(--color-concrete);
+  }
+  &__img {
+    position: absolute;
+    z-index: 5;
+    right: -10px;
+    bottom: 0;
+  }
+  &__pag-item {
+    padding-top: 34px;
+    cursor: pointer;
+  }
+  &__pag-wrapper {
+    position: relative;
+    width: 116px;
+    height: 116px;
+    background-color: var(--color-concrete);
+  }
+  &__pag-image {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0;
+    text-align: center;
+  }
+
+  .swiper-slide {
+    overflow: hidden;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    text-align: center;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 0 6px;
+  }
+  .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    background: var(--color-silver);
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--color-shaft);
+  }
+}

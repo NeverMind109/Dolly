@@ -1,0 +1,42 @@
+.winter-section {
+  position: relative;
+  &__decorate {
+    position: absolute;
+    top: -200px;
+    left: 12%;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 392px;
+    text-align: right;
+    text-transform: uppercase;
+    color: var(--color-concrete);
+  }
+  &__wrapper {
+    position: relative;
+    z-index: 2;
+    display: flex;
+  }
+  &__image {
+    position: relative;
+    width: 664px;
+    height: 459px;
+    background-color: var(--color-concrete);
+    margin-right: 102px;
+  }
+  &__img {
+    position: absolute;
+    right: 105px;
+    bottom: 0;
+  }
+  &__info {
+    max-width: 377px;
+    padding-top: 50px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__descr {
+    margin-bottom: 45px;
+  }
+}

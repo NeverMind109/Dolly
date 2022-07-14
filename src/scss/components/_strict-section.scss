@@ -1,0 +1,35 @@
+.strict-section {
+  &__wrapper {
+    display: flex;
+  }
+  &__image {
+    position: relative;
+    width: 591px;
+    height: 440px;
+    background-color: var(--color-concrete);
+    margin-right: 125px;
+  }
+  &__img {
+    position: absolute;
+    right: 77px;
+    bottom: -56px;
+  }
+  &__info {
+    max-width: 385px;
+    padding-top: 49px;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__descr {
+    margin-bottom: 50px;
+  }
+  &__line {
+    position: absolute;
+    left: 109px;
+    top: -22%;
+    height: 276px;
+    width: 1px;
+    background-color: var(--color-black);
+  }
+}
