@@ -1,0 +1,33 @@
+.product-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &:hover {
+    .product-item__name {
+      color: var(--color-seagull);
+    }
+  }
+  &__image {
+    @include flex-all-center;
+
+    height: 100%;
+    font-size: 0;
+    background-color: #f1f1f1;
+    margin-bottom: 30px;
+  }
+  &__name {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--color-boulder);
+    transition: color 0.3s;
+    margin-bottom: 17px;
+  }
+  &__price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--color-abbey);
+  }
+}

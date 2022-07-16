@@ -4,8 +4,8 @@
   }
   &__image {
     position: relative;
-    width: 591px;
-    height: 440px;
+    min-width: 591px;
+    min-height: 440px;
     background-color: var(--color-concrete);
     margin-right: 125px;
   }

@@ -55,8 +55,8 @@
   }
   &__link-wrapper {
     position: relative;
-    width: 376px;
-    height: 562px;
+    min-width: 376px;
+    min-height: 562px;
     background-color: var(--color-concrete);
   }
   &__img {
@@ -71,8 +71,8 @@
   }
   &__pag-wrapper {
     position: relative;
-    width: 116px;
-    height: 116px;
+    min-width: 116px;
+    min-height: 116px;
     background-color: var(--color-concrete);
   }
   &__pag-image {

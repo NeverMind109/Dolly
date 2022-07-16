@@ -1,0 +1,20 @@
+.catalog {
+  padding: 191px 0 160px;
+  background-color: var(--color-light);
+  &__wrapper {
+    display: flex;
+  }
+  &__filter {
+    margin-right: 76px;
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+    row-gap: 70px;
+    width: 100%;
+  }
+  &__card {
+    grid-column: 4 span;
+  }
+}

@@ -19,8 +19,8 @@
   }
   &__image {
     position: relative;
-    width: 664px;
-    height: 459px;
+    min-width: 664px;
+    min-height: 459px;
     background-color: var(--color-concrete);
     margin-right: 102px;
   }
