@@ -5,6 +5,7 @@
   z-index: 100;
   width: 100%;
   padding: 50px 0 10px;
+  background-color: transparent;
   &__wrapper {
     @include flex-v-center;
   }

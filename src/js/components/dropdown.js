@@ -13,6 +13,11 @@ const filterBrandCaret = document.querySelector("#brandCaret");
 const filterBrandMoreBtn = document.querySelector(".filter__brand-morebtn");
 const filterBrandHidden = document.querySelector(".filter__brand-hidden");
 
+const productCategorydMoreBtn = document.querySelector(".product__morebtn");
+const productCategorydHidden = document.querySelector(
+  ".product__category-hidden"
+);
+
 if (filterCategoryDropdown) {
   filterCategoryDropdown.addEventListener("click", function (event) {
     event.preventDefault();
@@ -46,7 +51,7 @@ if (filterBrandDropdown) {
     }
   });
 
-  filterBrandMoreBtn.addEventListener("click", function (event) {
+  filterBrandMoreBtn.addEventListener("click", function () {
     if (!filterBrandHidden.classList.contains("active")) {
       filterBrandHidden.classList.add("active");
       filterBrandHidden.style.display = "flex";
@@ -56,6 +61,22 @@ if (filterBrandDropdown) {
         filterBrandHidden.classList.remove("active");
         filterBrandHidden.style.display = "none";
         filterBrandMoreBtn.innerHTML = "Смотреть еще";
+      }, 100);
+    }
+  });
+}
+
+if (productCategorydMoreBtn) {
+  productCategorydMoreBtn.addEventListener("click", function () {
+    if (!productCategorydHidden.classList.contains("active")) {
+      productCategorydHidden.classList.add("active");
+      productCategorydHidden.style.display = "flex";
+      productCategorydMoreBtn.innerHTML = "Скрыть";
+    } else {
+      setTimeout(function () {
+        productCategorydHidden.classList.remove("active");
+        productCategorydHidden.style.display = "none";
+        productCategorydMoreBtn.innerHTML = "Подробнее";
       }, 100);
     }
   });

@@ -1,0 +1,33 @@
+.colors {
+  @include flex-v-center;
+  &__list {
+    @include flex-v-center;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 9px;
+    }
+  }
+  &__btn {
+    @include flex-all-center;
+    width: 15px;
+    height: 15px;
+    border: 1px solid currentColor;
+    background-color: currentColor;
+    transition: border 0.3s, border-radius 0.3s;
+  }
+  .colors__btn.active {
+    border: 2px solid var(--color-seagull);
+    border-radius: 3px;
+  }
+  &__btn--cloud {
+    color: #cecbc8;
+  }
+  &__btn--white {
+    border: 1px solid #d6d6d6;
+    color: var(--color-light);
+  }
+  &__btn-shaft {
+    color: var(--color-shaft);
+  }
+}

@@ -1,0 +1,34 @@
+.sizes-table {
+  width: 100%;
+  border-collapse: collapse;
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: var(--color-abbey);
+    margin-bottom: 30px;
+  }
+  &__header {
+    text-align: center;
+    .sizes-table__row:nth-child(odd) {
+      background-color: var(--color-light);
+    }
+    .sizes-table__th {
+      padding-bottom: 25px;
+    }
+  }
+  &__th {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--color-black);
+  }
+  &__row:nth-child(odd) {
+    background-color: var(--color-accent);
+  }
+  &__col {
+    text-align: center;
+    padding: 15px;
+  }
+}

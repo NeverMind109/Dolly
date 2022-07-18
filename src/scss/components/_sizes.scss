@@ -1,0 +1,28 @@
+.sizes {
+  @include flex-v-center;
+  &__list {
+    @include flex-v-center;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  &__btn {
+    @include flex-all-center;
+
+    width: 41px;
+    height: 41px;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--color-black);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    &:hover {
+      background-color: var(--color-light);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+  .sizes__btn.active {
+    border: 2px solid var(--color-seagull);
+  }
+}
