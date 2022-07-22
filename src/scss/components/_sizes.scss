@@ -2,6 +2,10 @@
   @include flex-v-center;
   &__list {
     @include flex-v-center;
+
+    @include mobile {
+      margin-top: 20px;
+    }
   }
   &__item {
     &:not(:last-child) {
@@ -24,5 +28,9 @@
   }
   .sizes__btn.active {
     border: 2px solid var(--color-seagull);
+  }
+
+  @include mobile {
+    flex-wrap: wrap;
   }
 }

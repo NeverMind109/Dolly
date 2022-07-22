@@ -2,162 +2,175 @@
   <div class="container">
     <h2 class="visually-hidden">Каталог товаров</h2>
     <div class="catalog__wrapper">
-      <div class="catalog__filter filter">
-        <div class="filter__categories">
-          <button class="btn-reset filter__heading filter__category-title">
-            КАТЕГОРИИ<img
-              class="filter__caret active"
-              id="categoryCaret"
-              src="img/caret.svg"
-              alt=""
-            />
-          </button>
-          <ul class="list-reset filter__category-content active">
-            <li class="filter__category">
-              <a class="filter__category-btn" href="#">Босоножки</a>
-            </li>
-            <li class="filter__category">
-              <a class="filter__category-btn" href="#">Балетки</a>
-            </li>
-            <li class="filter__category">
-              <a class="filter__category-btn" href="#">Сабо</a>
-            </li>
-            <li class="filter__category">
-              <a class="filter__category-btn" href="#">Сандалии</a>
-            </li>
-            <li class="filter__category">
-              <a class="filter__category-btn" href="#"> Сабо и мюли </a>
-            </li>
-            <li class="filter__category">
-              <a class="filter__category-btn" href="#">Слипоны</a>
-            </li>
-            <li class="filter__category">
-              <a class="filter__category-btn" href="#"> Домашняя обувь </a>
-            </li>
-            <li class="filter__category">
-              <a class="filter__category-btn" href="#">Туфли</a>
-            </li>
-            <li class="filter__category">
-              <a class="filter__category-btn" href="#">Эспадрильи</a>
-            </li>
-            <li class="filter__category">
-              <a class="filter__category-btn" href="#">Ботинки</a>
-            </li>
-            <li class="filter__category">
-              <a class="filter__category-btn" href="#">Ботильоны</a>
-            </li>
-            <li class="filter__category">
-              <a class="filter__category-btn" href="#">Сапоги</a>
-            </li>
-          </ul>
-        </div>
-        <div class="filter__price">
-          <span class="filter__heading filter__price-title">Цена</span>
-          <div class="filter__price-slider"></div>
-          <div class="filter__values">
-            <div class="filter__value">
-              <span class="filter__text">от</span>
-              <input class="filter__number" id="rangeLowerValue" type="text" />
-            </div>
-
-            <div class="filter__value">
-              <span class="filter__text">до</span>
-              <input class="filter__number" id="rangeUpperValue" type="text" />
-            </div>
-          </div>
-        </div>
-        <div class="filter__brand">
-          <span class="filter__heading filter__brand-title"
-            >Бренд
-            <img
-              class="filter__caret active"
-              id="brandCaret"
-              src="img/caret.svg"
-              alt=""
-            />
-          </span>
-          <div class="filter__brand-content active">
-            <div class="filter__brand-search-wrapper">
-              <input
-                class="filter__brand-search"
-                type="search"
-                placeholder="Введите название бренда"
+      <aside class="catalog__filter filter">
+        <div class="filter__btn">Показать фильтры</div>
+        <div class="filter__wrapper">
+          <div class="filter__categories">
+            <button class="btn-reset filter__heading filter__category-title">
+              КАТЕГОРИИ<img
+                class="filter__caret active"
+                id="categoryCaret"
+                src="img/caret.svg"
+                alt=""
               />
-              <button
-                class="btn-reset filter__brand-searchbtn"
-                aria-label="Кнопка поиска"
-              ></button>
-            </div>
-            <div class="filter__brand-item">
-              <label class="filter__brand-label">
-                <input class="filter__brand-checkbox" type="checkbox" />
-                <span class="filter__brand-name">Alpina</span>
-              </label>
-            </div>
-            <div class="filter__brand-item">
-              <label class="filter__brand-label">
-                <input class="filter__brand-checkbox" type="checkbox" />
-                <span class="filter__brand-name">AMORİSS</span>
-              </label>
-            </div>
-            <div class="filter__brand-item">
-              <label class="filter__brand-label">
-                <input class="filter__brand-checkbox" type="checkbox" />
-                <span class="filter__brand-name">ALPİNO</span>
-              </label>
-            </div>
-            <div class="filter__brand-item">
-              <label class="filter__brand-label">
-                <input class="filter__brand-checkbox" type="checkbox" />
-                <span class="filter__brand-name">ANALPA</span>
-              </label>
-            </div>
-            <div class="filter__brand-more">
-              <div class="filter__brand-hidden">
-                <div class="filter__brand-item">
-                  <label class="filter__brand-label">
-                    <input class="filter__brand-checkbox" type="checkbox" />
-                    <span class="filter__brand-name">Lorem</span>
-                  </label>
-                </div>
-                <div class="filter__brand-item">
-                  <label class="filter__brand-label">
-                    <input class="filter__brand-checkbox" type="checkbox" />
-                    <span class="filter__brand-name">ipsum</span>
-                  </label>
-                </div>
-                <div class="filter__brand-item">
-                  <label class="filter__brand-label">
-                    <input class="filter__brand-checkbox" type="checkbox" />
-                    <span class="filter__brand-name">dolor</span>
-                  </label>
-                </div>
-                <div class="filter__brand-item">
-                  <label class="filter__brand-label">
-                    <input class="filter__brand-checkbox" type="checkbox" />
-                    <span class="filter__brand-name">sit amet</span>
-                  </label>
-                </div>
-                <div class="filter__brand-item">
-                  <label class="filter__brand-label">
-                    <input class="filter__brand-checkbox" type="checkbox" />
-                    <span class="filter__brand-name">consectetur</span>
-                  </label>
-                </div>
-                <div class="filter__brand-item">
-                  <label class="filter__brand-label">
-                    <input class="filter__brand-checkbox" type="checkbox" />
-                    <span class="filter__brand-name">adipisicing</span>
-                  </label>
-                </div>
+            </button>
+            <ul class="list-reset filter__category-content active">
+              <li class="filter__category">
+                <a class="filter__category-btn" href="#">Босоножки</a>
+              </li>
+              <li class="filter__category">
+                <a class="filter__category-btn" href="#">Балетки</a>
+              </li>
+              <li class="filter__category">
+                <a class="filter__category-btn" href="#">Сабо</a>
+              </li>
+              <li class="filter__category">
+                <a class="filter__category-btn" href="#">Сандалии</a>
+              </li>
+              <li class="filter__category">
+                <a class="filter__category-btn" href="#"> Сабо и мюли </a>
+              </li>
+              <li class="filter__category">
+                <a class="filter__category-btn" href="#">Слипоны</a>
+              </li>
+              <li class="filter__category">
+                <a class="filter__category-btn" href="#"> Домашняя обувь </a>
+              </li>
+              <li class="filter__category">
+                <a class="filter__category-btn" href="#">Туфли</a>
+              </li>
+              <li class="filter__category">
+                <a class="filter__category-btn" href="#">Эспадрильи</a>
+              </li>
+              <li class="filter__category">
+                <a class="filter__category-btn" href="#">Ботинки</a>
+              </li>
+              <li class="filter__category">
+                <a class="filter__category-btn" href="#">Ботильоны</a>
+              </li>
+              <li class="filter__category">
+                <a class="filter__category-btn" href="#">Сапоги</a>
+              </li>
+            </ul>
+          </div>
+          <div class="filter__price">
+            <span class="filter__heading filter__price-title">Цена</span>
+            <div class="filter__price-slider"></div>
+            <div class="filter__values">
+              <div class="filter__value">
+                <span class="filter__text">от</span>
+                <input
+                  class="filter__number"
+                  id="rangeLowerValue"
+                  type="text"
+                  aria-label="Минимальныя цена"
+                />
               </div>
-              <button class="btn-reset filter__brand-morebtn" type="button">
-                Смотреть ещё
-              </button>
+
+              <div class="filter__value">
+                <span class="filter__text">до</span>
+                <input
+                  class="filter__number"
+                  id="rangeUpperValue"
+                  type="text"
+                  aria-label="Максимальная цена"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="filter__brand">
+            <span class="filter__heading filter__brand-title"
+              >Бренд
+              <img
+                class="filter__caret active"
+                id="brandCaret"
+                src="img/caret.svg"
+                alt=""
+              />
+            </span>
+            <div class="filter__brand-content active">
+              <div class="filter__brand-search-wrapper">
+                <input
+                  class="filter__brand-search"
+                  type="search"
+                  placeholder="Введите название бренда"
+                />
+                <button
+                  class="btn-reset filter__brand-searchbtn"
+                  aria-label="Кнопка поиска"
+                ></button>
+              </div>
+              <div class="filter__brand-item">
+                <label class="filter__brand-label">
+                  <input class="filter__brand-checkbox" type="checkbox" />
+                  <span class="filter__brand-name">Alpina</span>
+                </label>
+              </div>
+              <div class="filter__brand-item">
+                <label class="filter__brand-label">
+                  <input class="filter__brand-checkbox" type="checkbox" />
+                  <span class="filter__brand-name">AMORİSS</span>
+                </label>
+              </div>
+              <div class="filter__brand-item">
+                <label class="filter__brand-label">
+                  <input class="filter__brand-checkbox" type="checkbox" />
+                  <span class="filter__brand-name">ALPİNO</span>
+                </label>
+              </div>
+              <div class="filter__brand-item">
+                <label class="filter__brand-label">
+                  <input class="filter__brand-checkbox" type="checkbox" />
+                  <span class="filter__brand-name">ANALPA</span>
+                </label>
+              </div>
+              <div class="filter__brand-more">
+                <div class="filter__brand-hidden">
+                  <div class="filter__brand-item">
+                    <label class="filter__brand-label">
+                      <input class="filter__brand-checkbox" type="checkbox" />
+                      <span class="filter__brand-name">Lorem</span>
+                    </label>
+                  </div>
+                  <div class="filter__brand-item">
+                    <label class="filter__brand-label">
+                      <input class="filter__brand-checkbox" type="checkbox" />
+                      <span class="filter__brand-name">ipsum</span>
+                    </label>
+                  </div>
+                  <div class="filter__brand-item">
+                    <label class="filter__brand-label">
+                      <input class="filter__brand-checkbox" type="checkbox" />
+                      <span class="filter__brand-name">dolor</span>
+                    </label>
+                  </div>
+                  <div class="filter__brand-item">
+                    <label class="filter__brand-label">
+                      <input class="filter__brand-checkbox" type="checkbox" />
+                      <span class="filter__brand-name">sit amet</span>
+                    </label>
+                  </div>
+                  <div class="filter__brand-item">
+                    <label class="filter__brand-label">
+                      <input class="filter__brand-checkbox" type="checkbox" />
+                      <span class="filter__brand-name">consectetur</span>
+                    </label>
+                  </div>
+                  <div class="filter__brand-item">
+                    <label class="filter__brand-label">
+                      <input class="filter__brand-checkbox" type="checkbox" />
+                      <span class="filter__brand-name">adipisicing</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="btn-reset filter__brand-morebtn" type="button">
+                  Смотреть ещё
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </aside>
       <div class="catalog__inner">
         <a class="catalog__card product-item" href="product-card.html">
           <div class="product-item__image">
@@ -172,14 +185,17 @@
               />
               <img
                 class="product-item__img"
-                loading="lazy"
                 src="img/content/catalog-item-1.png"
                 alt="туфли лакированные"
+                width="286"
+                height="364"
               />
             </picture>
           </div>
-          <span class="product-item__name">туфли лакированные</span>
-          <span class="product-item__price">4 999 ₽</span>
+          <div class="product__item-body">
+            <span class="product-item__name">туфли лакированные</span>
+            <span class="product-item__price">4 999 ₽</span>
+          </div>
         </a>
         <a class="catalog__card product-item" href="product-card.html">
           <div class="product-item__image">
@@ -194,14 +210,17 @@
               />
               <img
                 class="product-item__img"
-                loading="lazy"
                 src="img/content/catalog-item-2.png"
                 alt="туфли без каблука"
+                width="286"
+                height="364"
               />
             </picture>
           </div>
-          <span class="product-item__name">туфли без каблука</span>
-          <span class="product-item__price">5 999 ₽</span>
+          <div class="product__item-body">
+            <span class="product-item__name">туфли без каблука</span>
+            <span class="product-item__price">5 999 ₽</span>
+          </div>
         </a>
         <a class="catalog__card product-item" href="product-card.html">
           <div class="product-item__image">
@@ -216,14 +235,17 @@
               />
               <img
                 class="product-item__img"
-                loading="lazy"
                 src="img/content/catalog-item-3.png"
                 alt="туфли 13 сантиметров"
+                width="286"
+                height="364"
               />
             </picture>
           </div>
-          <span class="product-item__name">туфли 13 сантиметров</span>
-          <span class="product-item__price">3 999 ₽</span>
+          <div class="product__item-body">
+            <span class="product-item__name">туфли 13 сантиметров</span>
+            <span class="product-item__price">3 999 ₽</span>
+          </div>
         </a>
         <a class="catalog__card product-item" href="product-card.html">
           <div class="product-item__image">
@@ -241,11 +263,15 @@
                 loading="lazy"
                 src="img/content/catalog-item-4.png"
                 alt="туфли жёлтый лак"
+                width="286"
+                height="364"
               />
             </picture>
           </div>
-          <span class="product-item__name">туфли жёлтый лак</span>
-          <span class="product-item__price">3 999 ₽</span>
+          <div class="product__item-body">
+            <span class="product-item__name">туфли жёлтый лак</span>
+            <span class="product-item__price">3 999 ₽</span>
+          </div>
         </a>
         <a class="catalog__card product-item" href="product-card.html">
           <div class="product-item__image">
@@ -263,11 +289,15 @@
                 loading="lazy"
                 src="img/content/catalog-item-5.png"
                 alt="туфли пантера"
+                width="286"
+                height="364"
               />
             </picture>
           </div>
-          <span class="product-item__name">туфли пантера</span>
-          <span class="product-item__price">4 999 ₽</span>
+          <div class="product__item-body">
+            <span class="product-item__name">туфли пантера</span>
+            <span class="product-item__price">4 999 ₽</span>
+          </div>
         </a>
         <a class="catalog__card product-item" href="product-card.html">
           <div class="product-item__image">
@@ -285,11 +315,15 @@
                 loading="lazy"
                 src="img/content/catalog-item-6.png"
                 alt="туфли с кисточками"
+                width="286"
+                height="364"
               />
             </picture>
           </div>
-          <span class="product-item__name">туфли с кисточками</span>
-          <span class="product-item__price">6 599 ₽</span>
+          <div class="product__item-body">
+            <span class="product-item__name">туфли с кисточками</span>
+            <span class="product-item__price">6 599 ₽</span>
+          </div>
         </a>
         <a class="catalog__card product-item" href="product-card.html">
           <div class="product-item__image">
@@ -307,11 +341,15 @@
                 loading="lazy"
                 src="img/content/catalog-item-7.png"
                 alt="туфли нарядные"
+                width="286"
+                height="364"
               />
             </picture>
           </div>
-          <span class="product-item__name">туфли нарядные</span>
-          <span class="product-item__price">8 999 ₽</span>
+          <div class="product__item-body">
+            <span class="product-item__name">туфли нарядные</span>
+            <span class="product-item__price">8 999 ₽</span>
+          </div>
         </a>
         <a class="catalog__card product-item" href="product-card.html">
           <div class="product-item__image">
@@ -329,11 +367,15 @@
                 loading="lazy"
                 src="img/content/catalog-item-8.png"
                 alt="туфли полосатые"
+                width="286"
+                height="364"
               />
             </picture>
           </div>
-          <span class="product-item__name">туфли полосатые</span>
-          <span class="product-item__price">4 599 ₽</span>
+          <div class="product__item-body">
+            <span class="product-item__name">туфли полосатые</span>
+            <span class="product-item__price">4 599 ₽</span>
+          </div>
         </a>
         <a class="catalog__card product-item" href="product-card.html">
           <div class="product-item__image">
@@ -351,11 +393,15 @@
                 loading="lazy"
                 src="img/content/catalog-item-9.png"
                 alt="туфли розовые, лак"
+                width="237"
+                height="184"
               />
             </picture>
           </div>
-          <span class="product-item__name">туфли розовые, лак</span>
-          <span class="product-item__price">4 799 ₽</span>
+          <div class="product__item-body">
+            <span class="product-item__name">туфли розовые, лак</span>
+            <span class="product-item__price">4 799 ₽</span>
+          </div>
         </a>
       </div>
     </div>

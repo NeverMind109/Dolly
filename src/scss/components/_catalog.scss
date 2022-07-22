@@ -3,9 +3,21 @@
   background-color: var(--color-light);
   &__wrapper {
     display: flex;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
   &__filter {
     margin-right: 76px;
+
+    @include small-tablet {
+      margin-right: 50px;
+    }
+    @include mobile {
+      margin-right: 0;
+      margin-bottom: 35px;
+    }
   }
   &__inner {
     display: grid;
@@ -13,8 +25,23 @@
     column-gap: 20px;
     row-gap: 70px;
     width: 100%;
+
+    @include small-tablet {
+      row-gap: 30px;
+    }
   }
   &__card {
     grid-column: 4 span;
+
+    @include tablet {
+      grid-column: 6 span;
+    }
+    @include small-tablet {
+      grid-column: 12 span;
+    }
+  }
+
+  @include small-tablet {
+    padding: 150px 0 100px;
   }
 }

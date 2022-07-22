@@ -4,6 +4,10 @@
   &__item {
     &:not(:last-child) {
       margin-right: 8px;
+
+      @include tablet {
+        margin-right: 40px;
+      }
     }
   }
 }

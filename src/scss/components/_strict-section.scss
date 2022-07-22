@@ -1,22 +1,55 @@
 .strict-section {
   &__wrapper {
     display: flex;
+
+    @include tablet {
+      justify-content: center;
+    }
+    @include small-tablet {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__image {
     position: relative;
     min-width: 591px;
     min-height: 440px;
     background-color: var(--color-concrete);
-    margin-right: 125px;
+    margin: 50px 125px 50px 0;
+
+    @include tablet {
+      min-width: 50%;
+      margin-right: 50px;
+    }
+    @include small-tablet {
+      width: 100%;
+      margin-right: 0;
+    }
   }
   &__img {
     position: absolute;
     right: 77px;
     bottom: -56px;
+
+    @include tablet {
+      right: 15px;
+    }
+    @include mobile {
+      right: 0;
+      width: auto;
+      height: 95%;
+    }
   }
   &__info {
     max-width: 385px;
-    padding-top: 49px;
+    padding-top: 95px;
+
+    @include small-tablet {
+      order: -1;
+      text-align: center;
+      padding-top: 0;
+      margin-bottom: 25px;
+    }
   }
   &__title {
     margin-bottom: 30px;
@@ -31,5 +64,9 @@
     height: 276px;
     width: 1px;
     background-color: var(--color-black);
+
+    @include tablet {
+      display: none;
+    }
   }
 }

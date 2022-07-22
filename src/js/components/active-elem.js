@@ -6,6 +6,8 @@ const favouritesText = document.querySelector("#favouritesText");
 const productSection = document.querySelector(".product");
 const popularGoodsSection = document.querySelector(".popular-goods");
 const popularGoodsTitle = document.querySelector(".popular-goods__title");
+const filterMobileBtn = document.querySelector(".filter__btn");
+const filterContent = document.querySelector(".filter__wrapper");
 
 if (sizeBtns) {
   sizeBtns.forEach((item) => {
@@ -48,5 +50,29 @@ if (favouritesBtn) {
 if (productSection) {
   if (popularGoodsSection) {
     popularGoodsTitle.innerHTML = "С этим покупают";
+  }
+}
+
+if (filterMobileBtn) {
+  mobileFilterSection();
+  window.onresize = mobileFilterSection;
+
+  function mobileFilterSection() {
+    if (window.innerWidth <= 576) {
+      filterMobileBtn.nextElementSibling.classList.add("hidden");
+      filterMobileBtn.addEventListener("click", function () {
+        if (!filterMobileBtn.nextElementSibling.classList.contains("hidden")) {
+          filterMobileBtn.innerHTML = "Показать фильтры";
+          filterMobileBtn.nextElementSibling.classList.add("hidden");
+        } else {
+          filterMobileBtn.innerHTML = "Скрыть фильтры";
+          filterMobileBtn.nextElementSibling.classList.remove("hidden");
+        }
+      });
+    }
+    if (window.innerWidth > 576) {
+      filterMobileBtn.innerHTML = "Показать фильтры";
+      filterMobileBtn.nextElementSibling.classList.remove("hidden");
+    }
   }
 }

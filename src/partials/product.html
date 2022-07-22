@@ -27,9 +27,9 @@
                 />
                 <img
                   class="product__big-img"
-                  loading="lazy"
                   src="img/content/card-img-big.jpg"
                   width="658"
+                  height="499"
                   alt="Туфли лакированные"
                 />
               </picture>
@@ -49,6 +49,7 @@
                   loading="lazy"
                   src="img/content/card-img-big.jpg"
                   width="658"
+                  height="499"
                   alt="Туфли лакированные"
                 />
               </picture>
@@ -68,6 +69,7 @@
                   loading="lazy"
                   src="img/content/card-img-big.jpg"
                   width="658"
+                  height="499"
                   alt="Туфли лакированные"
                 />
               </picture>
@@ -77,61 +79,70 @@
         <div class="product__small-image" id="productThumbs">
           <div class="swiper-wrapper">
             <div class="swiper-slide product__small-slide">
-              <picture>
-                <source
-                  srcset="img/content/card-img-small-1.avif"
-                  type="image/avif"
-                />
-                <source
-                  srcset="img/content/card-img-small-1.webp"
-                  type="image/webp"
-                />
-                <img
-                  class="product__small-img"
-                  width="156"
-                  loading="lazy"
-                  src="img/content/card-img-small-1.jpg"
-                  alt="Туфли лакированные"
-                />
-              </picture>
+              <div class="product__small-wrapper">
+                <picture>
+                  <source
+                    srcset="img/content/card-img-small-1.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="img/content/card-img-small-1.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="product__small-img"
+                    width="156"
+                    height="132"
+                    loading="lazy"
+                    src="img/content/card-img-small-1.jpg"
+                    alt="Туфли лакированные"
+                  />
+                </picture>
+              </div>
             </div>
             <div class="swiper-slide product__small-slide">
-              <picture>
-                <source
-                  srcset="img/content/card-img-small-2.avif"
-                  type="image/avif"
-                />
-                <source
-                  srcset="img/content/card-img-small-2.webp"
-                  type="image/webp"
-                />
-                <img
-                  class="product__small-img"
-                  width="156"
-                  loading="lazy"
-                  src="img/content/card-img-small-2.jpg"
-                  alt="Туфли лакированные"
-                />
-              </picture>
+              <div class="product__small-wrapper">
+                <picture>
+                  <source
+                    srcset="img/content/card-img-small-2.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="img/content/card-img-small-2.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="product__small-img"
+                    width="156"
+                    height="132"
+                    loading="lazy"
+                    src="img/content/card-img-small-2.jpg"
+                    alt="Туфли лакированные"
+                  />
+                </picture>
+              </div>
             </div>
             <div class="swiper-slide product__small-slide">
-              <picture>
-                <source
-                  srcset="img/content/card-img-small-3.avif"
-                  type="image/avif"
-                />
-                <source
-                  srcset="img/content/card-img-small-3.webp"
-                  type="image/webp"
-                />
-                <img
-                  class="product__small-img"
-                  width="156"
-                  loading="lazy"
-                  src="img/content/card-img-small-3.jpg"
-                  alt="Туфли лакированные"
-                />
-              </picture>
+              <div class="product__small-wrapper">
+                <picture>
+                  <source
+                    srcset="img/content/card-img-small-3.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="img/content/card-img-small-3.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="product__small-img"
+                    width="156"
+                    height="132"
+                    loading="lazy"
+                    src="img/content/card-img-small-3.jpg"
+                    alt="Туфли лакированные"
+                  />
+                </picture>
+              </div>
             </div>
           </div>
         </div>
@@ -188,18 +199,40 @@
           <span class="product__text product__text-category">Размеры:</span>
           <ul class="list-reset sizes__list">
             <li class="sizes__item">
-              <button class="btn-reset sizes__btn active" type="button">
+              <button
+                class="btn-reset sizes__btn active"
+                type="button"
+                aria-label="32 размер"
+              >
                 32
               </button>
             </li>
             <li class="sizes__item">
-              <button class="btn-reset sizes__btn" type="button">34</button>
+              <button
+                class="btn-reset sizes__btn"
+                type="button"
+                aria-label="34 размер"
+              >
+                34
+              </button>
             </li>
             <li class="sizes__item">
-              <button class="btn-reset sizes__btn" type="button">36</button>
+              <button
+                class="btn-reset sizes__btn"
+                type="button"
+                aria-label="36 размер"
+              >
+                36
+              </button>
             </li>
             <li class="sizes__item">
-              <button class="btn-reset sizes__btn" type="button">38</button>
+              <button
+                class="btn-reset sizes__btn"
+                type="button"
+                aria-label="38 размер"
+              >
+                38
+              </button>
             </li>
           </ul>
         </div>
@@ -216,18 +249,21 @@
               <button
                 class="btn-reset colors__btn colors__btn--cloud"
                 type="button"
+                aria-label="Цвет Серебряный Крайола"
               ></button>
             </li>
             <li class="colors__item">
               <button
                 class="btn-reset colors__btn colors__btn--white active"
                 type="button"
+                aria-label="Цвет Белый"
               ></button>
             </li>
             <li class="colors__item">
               <button
                 class="btn-reset colors__btn colors__btn-shaft"
                 type="button"
+                aria-label="Цвет Серый Коричневый"
               ></button>
             </li>
           </ul>

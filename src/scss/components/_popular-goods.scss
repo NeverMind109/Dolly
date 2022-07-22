@@ -25,10 +25,18 @@
   &__list-prev {
     left: -35px;
     background-image: url("../img/slider-arrow-previous.svg");
+
+    @include tablet {
+      left: 0;
+    }
   }
   &__list-next {
     right: -35px;
     background-image: url("../img/slider-arrow-next.svg");
+
+    @include tablet {
+      right: 0;
+    }
   }
   .swiper-slide {
     height: auto;
@@ -74,8 +82,16 @@
   &__btn {
     padding: 15px 50px;
     visibility: hidden;
+
+    @include tablet {
+      visibility: visible;
+    }
   }
   &__link-wrapper {
     text-align: center;
+  }
+
+  @include tablet {
+    padding-bottom: 100px;
   }
 }

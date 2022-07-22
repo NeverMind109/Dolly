@@ -8,8 +8,8 @@ const productBigImage = document.querySelector("#productSlider");
 const productsThumbs = document.querySelector("#productThumbs");
 
 const casualClothesThumbsSlider = new Swiper(casualClothesThumbs, {
-  spaceBetween: 10,
-  slidesPerView: 3,
+  slidesPerView: 2,
+  spaceBetween: 20,
   loop: true,
 
   pagination: {
@@ -17,33 +17,66 @@ const casualClothesThumbsSlider = new Swiper(casualClothesThumbs, {
     type: "bullets",
     clickable: true,
   },
+  breakpoints: {
+    576: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
 });
 
 const casualClothesSlider = new Swiper(casualBigImage, {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 0,
   loop: true,
 
   thumbs: {
     swiper: casualClothesThumbsSlider,
   },
+  breakpoints: {
+    576: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+    },
+  },
 });
 
 const popularListSlider = new Swiper(popularList, {
-  slidesPerView: 4,
-  spaceBetween: 10,
+  slidesPerView: 1,
+  spaceBetween: 0,
   loop: true,
 
   navigation: {
     nextEl: ".popular-goods__list-next",
     prevEl: ".popular-goods__list-prev",
   },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+  },
 });
 
 const productThumbsSlider = new Swiper(productsThumbs, {
-  spaceBetween: 20,
-  slidesPerView: 3,
-  speed: 400,
+  slidesPerView: 2,
+  spaceBetween: 10,
+  breakpoints: {
+    576: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      speed: 400,
+    },
+  },
 });
 
 const productSlider = new Swiper(productBigImage, {
